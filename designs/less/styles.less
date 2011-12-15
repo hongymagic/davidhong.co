@@ -1,14 +1,88 @@
-/* fonts.less */
-/**
- * Let's get the fonts right:
- *  - Readable on any device;
- *  - Respect browser settings, so if you like reading in 10px, good for you
- */
-html {
-  font-size: 100%;
-  line-height: 145%;
+@import "typography.less";
+@import "normalize.less";
 
-  body { font: normal normal 400 100%/100% Georgia, 'Times New Roman', serif; }
+
+
+
+
+/**
+ * Layout scaffolding
+ */
+body {
+  margin: 1.5em auto;
+  max-width: 510px;
+  position: relative;
+  
+  background-color: #eee;
+  -webkit-hyphens: auto;
+}
+
+
+h1, h2 { .script; color: #b00; }
+h1, h2, h3, p, li { margin: 1.5em 0 0; text-shadow: 0 1px white; }
+
+
+
+/* Header */
+hgroup {
+  font-size: 180%;
+  line-height: .8;
+  text-align: center;
+  
+  h1, h2 { margin: 0 auto 0.2em; }
+  
+  > h1 {
+    .sans;
+    letter-spacing: -0.06em;
+    text-transform: lowercase;
+    color: #000;
+    
+    &::before {
+      content: '';
+      background: transparent url(../images/robohash-hongymagic.png) no-repeat top left;
+      display: block;
+      margin: 0 auto 0.2em;
+      width: 76px;
+      height: 76px;
+    }
+  }
+  
+  > h2 {
+    .script;
+    font-size: 100%;
+    margin: 0;
+    color: #b00;
+  }
+}
+
+
+
+ul {
+  li {
+    
+    a {
+      margin: 1em 0;
+      border: 10px solid #fff;
+      padding: 0;
+      display: block;
+      position: relative;
+      
+      img { width: 100%; }
+      
+      h3 { 
+        .sans; 
+        position: absolute;
+        bottom: 0; 
+        width: 100%;
+        text-align: center;
+        line-height: 250%;
+        
+        display: block;
+        background-color: #fff; opacity: 0.75;
+        color: #000;
+      }
+    }
+  }
 }
 
 
@@ -16,7 +90,24 @@ html {
 
 
 
-/* mixins.less */
+#toc {
+  text-align: center;
+  
+  li {
+    .sans;
+  }
+}
+
+@media only screen and (min-width: 780px) {
+  #toc {
+    margin-left: -510px;
+    width: 11em;
+    position: fixed;
+    top: 10em; left: 50%;
+    
+    -webkit-transform: rotate(-5deg);
+  }
+}
 
 
 
@@ -24,25 +115,9 @@ html {
 
 
 
-
-/* layout.less */
-
-
-
-
-
-
-
-
-
-
-
-/* media queries */
-
-
-
-
-
-
-
-
+/**
+ * Smaller screens
+ */
+@media only screen and (max-width: 510px) {
+  body { padding: 0.7em; }
+}

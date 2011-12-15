@@ -1,0 +1,37 @@
+/**
+ * Typography
+ */
+ 
+/**
+ * Web fonts
+ */
+ @font-face {
+   font-family: 'Dancing Script';
+   font-style: normal;
+   font-weight: bold;
+   src: local('Dancing Script Bold'), local('DancingScript-Bold'), url('http://themes.googleusercontent.com/static/fonts/dancingscript/v2/KGBfwabt0ZRLA5W1ywjowQr4FYEmOdWJS9Fc8b-cYmo.woff') format('woff');
+ }
+
+/**
+ * Standard serif, sans-serif, script and monospace
+ */
+.sans {
+  font-family: sans-serif, monospace;
+}
+.serif {
+  font-family: Georgia, 'Times New Roman', serif;
+}
+.script {
+  font-family: 'Dancing Script', cursive;
+}
+
+/**
+ * Let's get the font readable to everyone by respect browser settings
+ */
+html {
+  font-size: 16px;
+
+  body {
+    font: normal normal 400 100%/140% Georgia, 'Times New Roman', serif;
+  }
+}
