@@ -3,7 +3,7 @@ use Rack::Static,
   :urls => ["/images", "/js", "/less"],
   :root => "public"
 
-rub lambda { |env|
+run lambda { |env|
   [
     200,
     {
