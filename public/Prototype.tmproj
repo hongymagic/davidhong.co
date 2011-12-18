@@ -10,7 +10,7 @@
 			<key>filename</key>
 			<string>index.html</string>
 			<key>lastUsed</key>
-			<date>2011-12-15T22:32:25Z</date>
+			<date>2011-12-16T07:12:56Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -34,8 +34,6 @@
 					<string>js</string>
 				</dict>
 				<dict>
-					<key>expanded</key>
-					<true/>
 					<key>name</key>
 					<string>less</string>
 					<key>regexFolderFilter</key>
@@ -44,8 +42,6 @@
 					<string>less</string>
 				</dict>
 			</array>
-			<key>expanded</key>
-			<true/>
 			<key>name</key>
 			<string>src</string>
 		</dict>
@@ -59,14 +55,14 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>7</integer>
+				<integer>15</integer>
 				<key>line</key>
-				<integer>86</integer>
+				<integer>109</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>0</integer>
+			<integer>77</integer>
 		</dict>
 		<key>less/normalize.less</key>
 		<dict>
