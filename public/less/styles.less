@@ -48,8 +48,6 @@ hgroup {
   }
 }
 
-
-
 ul, ol {
 	margin: 1.5em 0;
 	
@@ -78,6 +76,20 @@ ul, ol {
   }
 }
 
+p {
+  code {
+    margin: 0 2px;
+    padding: 2px 5px;
+    border: 1px solid #ccc;
+    background-color: #f8f8f8;
+
+    #styles > .border-radius(3px);
+  }
+
+  :first-child { margin: 0; }
+}
+
+/* The mighty table of contents that change position depending on screen size */
 #toc {
   text-align: center;
   
@@ -86,6 +98,7 @@ ul, ol {
   }
 }
 
+/* Very last element, has some bottom space for better scroll view */
 #aftermath {
 	margin: 1em 0;
 	padding: 1.5em 0 22em;
@@ -113,9 +126,7 @@ ul, ol {
   }
 }
 
-/**
- * Smaller screens
- */
+/* Smaller screens */
 @media only screen and (max-width: 510px) {
   body { padding: 0.7em; }
 }
